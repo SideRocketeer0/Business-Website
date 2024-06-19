@@ -1,0 +1,164 @@
+/* Ensure logo size remains consistent */
+.navbar-brand img.logo {
+    max-width: 80px; /* Adjust the maximum width as per your design */
+    height: auto;
+    display: block;
+    padding: 10px; /* Optional: Add padding around the logo */
+}
+
+/* Header styling */
+header {
+    background-color: #343a40;
+    color: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Side Navigation styling */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidenav a {
+    padding: 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidenav .social-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    color: #dc143c;
+}
+
+.hero .btn-primary {
+    background-color: #dc143c;
+    border-color: #dc143c;
+}
+
+/* Product section */
+.product-section {
+    background-color: #f8f9fa;
+}
+
+.product-item h5 {
+    color: #343a40;
+}
+
+.product-item .btn-primary {
+    background-color: #dc143c;
+    border-color: #dc143c;
+}
+
+/* Subscribe section */
+.subscribe-section {
+    background-color: #f8f9fa;
+}
+
+.subscribe-section .text-danger {
+    color: #dc143c !important;
+}
+
+.subscribe-section .btn-primary {
+    background-color: #dc143c;
+    border-color: #dc143c;
+}
+
+/* Footer styling */
+footer {
+    background-color: #343a40;
+    color: white;
+}
+
+footer .footer-links a {
+    color: #dc143c;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header .header-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sidenav {
+        padding-top: 20px;
+    }
+
+    .sidenav a {
+        font-size: 16px;
+    }
+
+
+/* Add this to ensure the header sticks to the top */
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}}
